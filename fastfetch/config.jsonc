@@ -1,0 +1,88 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+      "padding": {
+          "top": 0
+      }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "cpu",
+      "showPeCoreCount": true,
+      "temp": true,
+      "key": " CPU",
+      "keyColor": "93"
+    },
+    {
+      "type": "gpu",
+      "driverSpecific": true,
+      "temp": true,
+      "key": " GPU",
+      "keyColor": "93"
+    },
+    {
+      "type": "memory",
+      "key": " RAM",
+      "keyColor": "93"
+    },
+    {
+      "type": "disk",
+      "key": " Disk",
+      "keyColor": "93"
+    },
+    {
+      "type": "monitor",
+      "key": "󰇄 Display",
+      "keyColor": "37"
+    },
+    {
+      "type": "os",
+      "key": "󰣇 OS",
+      "keyColor": "37"
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel",
+      "keyColor": "37"
+    },
+    {
+      "type": "de",
+      "key": "󰇅 DE",
+      "keyColor": "37"
+    },
+    {
+      "type": "wm",
+      "key": "󰧨 WM",
+      "keyColor": "37"
+    },
+    {
+      "type": "packages",
+      "key": "󰉋 Packages",
+      "keyColor": "37"
+    },
+    {
+      "type": "terminal",
+      "key": " Terminal",
+      "keyColor": "94"
+    },
+    {
+      "type": "font",
+      "key": " Font",
+      "keyColor": "94"
+    },
+    {
+      "type": "uptime",
+      "key": " Uptime",
+      "keyColor": "94"
+    },
+    {
+      "type": "command",
+      "key": " OS Age ",
+      "keyColor": "94",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression /86400)); echo $days_difference days"
+    },
+    "break",
+    "colors"
+    ]
+}
